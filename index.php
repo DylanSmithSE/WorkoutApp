@@ -1,2 +1,1 @@
-<?php 
-echo "hello world";
+<?php include("./config/db.php");
