@@ -2,7 +2,7 @@
 //connect to db
 if ($db_url = getenv("CLEARDB_DATABASE_URL")) {
     $url = parse_url($db_url);
-    $server = $url["host1"];
+    $server = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
     $db = substr($url["path"], 1);
