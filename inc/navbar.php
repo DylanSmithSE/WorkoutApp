@@ -1,8 +1,8 @@
-<nav class="navbar fixed-bottom navbar-light bg-dark">
-    <ul>
-        <li>Home</li>
-        <li>Calendar</li>
-        <li>Exercises</li>
-        <li>History</li>
-    </ul>
+<nav>
+    <div class="navbar flex-container">
+        <a href="#">Home</a>
+        <a href="#">Calendar</a>
+        <a href="#">Exercises</a>
+        <a href="#">History</a>
+    </div>
 </nav>

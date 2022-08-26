@@ -1,3 +1,33 @@
+:root {
+	--ff-body: "Roboto", sans-serif;
+}
+
 body {
-	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: var(--ff-body);
+}
+nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-radius: 5px;
+	background-color: rgb(142, 201, 233);
+}
+.flex-container {
+	display: flex;
+}
+.navbar {
+	/* position: fixed;
+	bottom: 0; */
+	height: 3rem;
+	justify-content: space-around;
+}
+.navbar a {
+	text-decoration: none;
+	color: #444;
+	margin: 1rem 0;
+}
+.page-title {
+	text-align: center;
 }
