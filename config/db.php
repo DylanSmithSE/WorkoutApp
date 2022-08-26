@@ -7,14 +7,12 @@ if ($db_url = getenv("CLEARDB_DATABASE_URL")) {
     $password = $url["pass"];
     $db = substr($url["path"], 1);
     $conn = new mysqli($server, $username, $password, $db);
-    echo "connected to cleardb";
 } else {
     $server = "localhost";
     $username = "root";
     $password = "";
     $db = "workout-app";
     $conn = new mysqli($server, $username, $password, $db);
-    echo "connected to local host db";
 }
 
 //check connection
