@@ -7,15 +7,60 @@ body {
 	margin: 0;
 	font-family: var(--ff-body);
 }
+/* -------------- Utilities --------------------*/
+.flex-container {
+	display: flex;
+}
+.main-container {
+	padding: 1.5rem;
+	/* background-color: rgb(133, 133, 202); */
+}
+
+/* -------------- Header ---------------------*/
+header {
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 0.5rem;
+}
+
+.page-title {
+	text-align: center;
+}
+
+.plus {
+	font-size: 2rem;
+	color: rgb(142, 201, 233);
+}
+
+/* ----------- Main Content -----------------*/
+.color-identifier {
+	color: blue;
+	padding: 1rem;
+}
+.workout-card {
+	border-style: solid;
+	border-color: #a5a8a6;
+	border-width: 0.5px;
+	align-items: center;
+	margin: 1rem 0;
+	border-radius: 5px;
+}
+.card-options {
+	flex-grow: 1;
+	justify-content: end;
+	/* border-style: solid;
+	border-color: black;
+	border-width: 1px; */
+	padding: 0 1rem;
+}
+
+/* ----------- Navigation -------------------*/
 nav {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	border-radius: 5px;
 	background-color: rgb(142, 201, 233);
-}
-.flex-container {
-	display: flex;
 }
 .navbar {
 	/* position: fixed;
@@ -27,7 +72,4 @@ nav {
 	text-decoration: none;
 	color: #444;
 	margin: 1rem 0;
-}
-.page-title {
-	text-align: center;
 }
