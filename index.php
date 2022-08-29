@@ -13,10 +13,10 @@ include("./config/db.php");
             <h3 class="workout-name">Push 1</h3>
             <div class="card-options flex-container">
                 <div class="options">
-                    <p>Options</p>
+                    <p>Edit</p>
                     <p class="options-delete">Delete</p>
                 </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="toggleOptions(this)"></i>
             </div>
         </article>
 

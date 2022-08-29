@@ -16,7 +16,7 @@ body {
 	/* background-color: rgb(133, 133, 202); */
 }
 
-/* -------------- Header ---------------------*/
+/* -------------- Home Page ---------------------*/
 header {
 	align-items: center;
 	justify-content: space-between;
@@ -32,7 +32,6 @@ header {
 	color: rgb(142, 201, 233);
 }
 
-/* ----------- Main Content -----------------*/
 .color-identifier {
 	color: blue;
 	padding: 1rem;
@@ -59,8 +58,8 @@ header {
 	font-size: 1.25rem;
 }
 .options {
+	display: none;
 	position: absolute;
-	display: flex;
 	flex-direction: column;
 	background-color: white;
 	border-style: none;
@@ -75,7 +74,10 @@ header {
 }
 .options > p {
 	margin: 0;
-	padding: 0;
+	padding: 0.2rem;
+}
+.options > p:hover {
+	background-color: #a5a8a6;
 }
 .options-delete {
 	color: rgb(211, 87, 87);
@@ -102,3 +104,5 @@ nav {
 	color: #444;
 	margin: 1rem 0;
 }
+
+/* ----------- Add Workout -------------------*/
