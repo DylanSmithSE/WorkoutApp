@@ -7,3 +7,12 @@ function toggleOptions(e) {
 		options.style.display = "flex";
 	}
 }
+function openAddExercise() {
+	console.log("her");
+	var modal = document.getElementById("add-exercise-modal");
+	modal.style.display = "flex";
+}
+function closeAddExercise() {
+	var modal = document.getElementById("add-exercise-modal");
+	modal.style.display = "none";
+}

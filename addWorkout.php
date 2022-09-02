@@ -2,6 +2,7 @@
 include("./config/db.php");
 ?>
 <?php include("./inc/header.php"); ?>
+<?php include("./inc/addExercise.php") ?>
 <div class="main-container">
     <header class="flex-container">
         <h1 class="page-title">Add Workout</h1>
@@ -12,7 +13,10 @@ include("./config/db.php");
                 <input type="text" name="title" class="workout-input" placeholder="Enter workout name">
             </div>
             <div class="exercise-container">
-                <h4 class="exercise-name">Ring Dip</h4>
+                <div class="exercise-name-container flex-container">
+                    <h4 class="exercise-name">Ring Dip</h4>
+                    <i class="fa-solid fa-xmark remove-exercise"></i>
+                </div>
                 <div class="flex-container">
                     <h5 class="set-title">Sets</h5>
                     <h5 class="rep-title">Reps</h5>
@@ -40,8 +44,12 @@ include("./config/db.php");
                 </div>
                 <button class="btn add-set"><i class="fa-duotone fa-plus add-set-plus"></i>Add Set</button>
             </div>
+
             <div class="exercise-container">
-                <h4 class="exercise-name">Ring Dip</h4>
+                <div class="exercise-name-container flex-container">
+                    <h4 class="exercise-name">Ring Dip</h4>
+                    <i class="fa-solid fa-xmark remove-exercise"></i>
+                </div>
                 <div class="flex-container">
                     <h5 class="set-title">Sets</h5>
                     <h5 class="rep-title">Reps</h5>
@@ -69,7 +77,8 @@ include("./config/db.php");
                 </div>
                 <button class="btn add-set"><i class="fa-duotone fa-plus add-set-plus"></i>Add Set</button>
             </div>
-            <button class="btn add-exercise">Add Exercise</button>
+
+            <button type='button' class="btn add-exercise" onclick="openAddExercise()">Add Exercise</button>
 
 
             <input type="hidden" name="update_id" value="<?php echo $post['id']; ?>">
