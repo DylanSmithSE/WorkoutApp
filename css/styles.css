@@ -5,6 +5,7 @@
 	--light: #dedcdc;
 	--dark: #222730;
 	--danger: rgb(211, 87, 87);
+	--danger-hover: rgb(161, 49, 49);
 	--success: rgb(104, 196, 169);
 	--success-hover: rgb(65, 140, 118);
 }
@@ -133,6 +134,7 @@ nav {
 }
 .workout-input {
 	border: none;
+	font-size: 1rem;
 	width: 100%;
 	border-bottom: 1px solid var(--light);
 	padding-bottom: 0.5rem;
@@ -191,9 +193,11 @@ nav {
 .delete-set {
 	color: var(--danger);
 	margin-top: 0;
+	font-size: 1.4rem;
 }
 .delete-set:hover {
-	font-size: 1.25rem;
+	color: var(--danger-hover);
+	font-size: 1.45rem;
 }
 .add-set {
 	margin: 1rem 0;
