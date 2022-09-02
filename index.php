@@ -5,7 +5,9 @@ include("./config/db.php");
 <div class="main-container">
     <header class="flex-container">
         <h1 class="page-title">Workouts</h1>
-        <i class="fa-solid fa-square-plus plus"></i>
+        <a href="./addWorkout.php">
+            <i class="fa-solid fa-square-plus plus"></i>
+        </a>
     </header>
     <main>
         <article class="flex-container workout-card">
