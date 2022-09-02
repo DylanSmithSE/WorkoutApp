@@ -1,5 +1,12 @@
 :root {
 	--ff-body: "Roboto", sans-serif;
+	--primary: rgb(142, 201, 233);
+	--primary-hover: rgb(94, 157, 191);
+	--light: #dedcdc;
+	--dark: #222730;
+	--danger: rgb(211, 87, 87);
+	--success: rgb(104, 196, 169);
+	--success-hover: rgb(65, 140, 118);
 }
 
 body {
@@ -7,15 +14,27 @@ body {
 	margin: 0;
 	font-family: var(--ff-body);
 }
+
 /* -------------- Utilities --------------------*/
 .flex-container {
 	display: flex;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .main-container {
 	padding: 1.5rem;
 	/* background-color: rgb(133, 133, 202); */
 }
-
+.btn {
+	display: block;
+	margin: 0.5rem auto;
+	border: var(--light);
+	border-radius: 0.3rem;
+	padding: 0.25rem 0;
+}
 /* -------------- Home Page ---------------------*/
 header {
 	align-items: center;
@@ -29,7 +48,7 @@ header {
 
 .plus {
 	font-size: 2rem;
-	color: rgb(142, 201, 233);
+	color: var(--primary);
 }
 
 .color-identifier {
@@ -38,7 +57,7 @@ header {
 }
 .workout-card {
 	border-style: solid;
-	border-color: #a5a8a6;
+	border-color: var(--light);
 	border-width: 0.5px;
 	align-items: center;
 	margin: 1rem 0;
@@ -63,7 +82,7 @@ header {
 	flex-direction: column;
 	background-color: white;
 	border-style: none;
-	border-color: #222730;
+	border-color: var(--dark);
 	border-width: 0.2px;
 	border-radius: 5px;
 	box-shadow: 5px 10px 18px #c2c2c2;
@@ -77,10 +96,10 @@ header {
 	padding: 0.2rem;
 }
 .options > p:hover {
-	background-color: #a5a8a6;
+	background-color: var(--light);
 }
 .options-delete {
-	color: rgb(211, 87, 87);
+	color: var(--danger);
 }
 
 /* ----------- Navigation -------------------*/
@@ -106,3 +125,93 @@ nav {
 }
 
 /* ----------- Add Workout -------------------*/
+.workout-input-container {
+	width: 70%;
+	height: 2rem;
+	box-sizing: border-box;
+	margin: 0.5rem 0 0.5rem 0;
+}
+.workout-input {
+	border: none;
+	width: 100%;
+	border-bottom: 1px solid var(--light);
+	padding-bottom: 0.5rem;
+}
+.workout-input:focus {
+	outline: none;
+	border-bottom: 2px solid var(--primary);
+}
+.add-exercise {
+	margin: 2rem 0;
+	width: 100%;
+	background-color: var(--primary);
+}
+.add-exercise:hover {
+	background-color: var(--primary-hover);
+}
+
+.exercise-name {
+	margin: 1rem 0 0.5rem 0;
+}
+.set-title {
+	margin: 0.5rem 1.1rem 0.5rem 0;
+}
+.rep-title {
+	margin: 0.5rem 0;
+}
+.set-container {
+	margin-bottom: 0.5rem;
+}
+.set-number {
+	margin: 0;
+	background-color: #dedcdc;
+	border: #dedcdc;
+	border-radius: 0.3rem;
+	width: 1.5rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding: 0.25rem 0.1rem;
+	margin: 0 1rem 0 0;
+}
+.rep-input {
+	background-color: #dedcdc;
+	border: #dedcdc;
+	border-radius: 0.3rem;
+	width: 2rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: 0 1rem 0 0;
+}
+.rep-input:focus {
+	outline: none;
+	border: 2px solid var(--primary);
+}
+.delete-set {
+	color: var(--danger);
+	margin-top: 0;
+}
+.delete-set:hover {
+	font-size: 1.25rem;
+}
+.add-set {
+	margin: 1rem 0;
+	font-size: 0.75rem;
+	padding: 0.11rem 0 0.1rem 0;
+	width: 6.5rem;
+	background-color: var(--light);
+}
+.add-set-plus {
+	margin-right: 0.5rem;
+}
+.add-set:hover {
+	background-color: var(--primary-hover);
+}
+.save-template {
+	width: 25%;
+	background-color: var(--success);
+}
+.save-template:hover {
+	background-color: var(--success-hover);
+}
